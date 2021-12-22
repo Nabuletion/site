@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+body{
+    background-image: url("Bground/F5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: dotted;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 20px;
+}
+#uxcbat{
+    background-color: black;
+    background-size: cover;
+    text-transform: uppercase;
+}
+h1{
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#picx{
+    height: 150px;
+    width: 100%;
+}
+.tPic{
+    width: 25px;
+    height: 20px;
+    display: none;
+}
+
+.topB{
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    clear: right;
+    margin-top: 0;
+}
+.topB ul{
+    list-style: none;
+    margin-left: 8px;
+}
+.topB ul li{
+    display: inline-flex;
+    align-items: center;
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+.topB ul li a{
+    font-size: 10px;
+    color: rgb(234, 243, 235);
+    
+}
+.active,
+.topB ul li a:hover{
+    background: rgb(0, 255, 0);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.todays{
+    background-color: #fff;
+}
+.todays p{
+    margin-left: 2%;
+}
+
+#Pricing button{
+    background-color: red;
+    height: 35px;
+    width: 100%;
+    border-radius: 2px;
+    border-style: groove;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.balk{
+    background-color: rgb(12, 12, 12);
+    background-size: cover;
+    clear: left;
+}
+
+.tab{
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: #f1f1f1;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.tab button{
+    background-color: inherit;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 2px;
+    transition: 0.3s;
+}
+.tab button:hover{
+    background-color: #ddd;
+}
+.tab button.active{
+    background-color: rgb(241, 13, 13);
+}
+
+.Tel{
+    font-size: 25px;
+    color: whitesmoke;
+    width: 100%;
+}
+#tel{
+    text-align: center;
+}
+
+#Fball{
+   /* border-style: ridge;*/
+    width: 100%;
+}
+
+#dTable {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#dTable select{
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section .LLoogs{
+    /*border-style: groove;*/
+    margin-top: 2px;
+}
+section .LLoogs h2{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.hTitle{
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    border-style: groove;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+}
+table,
+td,
+th{
+    padding: 1px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+th{
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #fad1d1;
+}
+
+#Plans{
+    text-align: center;
+}
+.BPlan{
+    display: block;
+    border: groove;
+}
+.Plan{
+    border-style: groove;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+.Plan:hover,
+.Plan:focus{
+    font-size: 27px;
+    border-radius: 5px solid green;
+}
+.Plan button{
+    align-items: center;
+    width: 100%;
+    border-style: groove;
+    border: #e33;
+    border-radius: 3px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #fca2a2;
+}
+.Plan button:hover{
+    background-color: aqua;
+}
+
+.Plan h3{
+    font-weight: bold;
+}
+
+#sMedia h4{
+    text-align: center;
+}
+.socialMedia{
+    font-size: 7px;
+    background-color: rgb(0, 150, 0);
+    text-align: center;
+}
+.socialMedia ul{
+   /* list-style: none;*/
+    display: inline-flex;
+    color: white;
+    
+}
+.socialMedia ul li{
+    width: 40px;
+    margin: 1px;
+    padding: 1px;
+}
+.socialMedia ul li:first-child{
+    margin-left: 0;
+}
+.socialMedia ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.cRights{
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    background-size: cover;
+    margin-bottom: 5px;
+    position: static;
+    width: 100%;
+}
+
+/*Level 2*/
+@media screen and (min-width: 350px){
+    .topB ul li{
+        margin: 10px;
+    }
+    .socialMedia ul li{
+        width: 53px;
+        margin: 2px;
+        padding: 2px;
+    }
+    .socialMedia{
+        font-size: 10px;
+    }
+    
+}
+
+/*Level 3*/
+@media screen and (min-width: 540px){
+    body{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .topB ul li{
+        width: 70px;
+    }
+    .socialMedia ul li{
+        width: 80px;
+    }
+    .topB ul li a,
+    .socialMedia ul li a{
+        font-size: 15px;
+    }
+}
+
+/*Level 4*/
+@media screen and (min-width: 750px) {
+    body{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    h1{
+        display: block;
+        font-family: Algerian;
+        font-size: 40px;
+        color: aquamarine;
+        float: right;
+        width: 70%;
+        text-align: center;
+        line-height: 100px;
+        background-color: #000;
+        background-size: cover;
+    }
+    #picx{
+        width: 30%;
+        height: 180px;
+        float: left;
+        margin-left: 0;
+    }
+
+    .topB{
+        float: right;
+        width: 70%;
+        height: 80px;
+        background-color: #000;
+    }
+
+    .topB ul li{
+        width: 80px;
+    }
+    .topB ul li a,
+    .socialMedia ul li a{
+        font-size: 17px;
+    }
+    .socialMedia ul li{
+        width: 90px;
+    }
+    
+    .todays {
+        clear: both;
+    }
+
+    table,
+    td,
+    th{
+        padding: 2px;
+        font-size: 17px;
+    }
+    .BPlan{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .Plan{
+        border-style: groove;
+        border-radius: 4px;
+        justify-content: space-evenly;
+        font-size: 25px;
+    }
+    .Plan h3{
+        font-size: 22px;
+    }
+    .Plan p{
+        font-size: 20px;
+    }
+}
+
+/*Level 5*/
+@media screen and (min-width: 950px) {
+    body{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .topB ul li{
+        width: 80px;
+    }
+    .topB ul li a{
+        font-size: 18px;
+    }
+    /*Icons*/
+    #tPic{
+        display: block;
+        width: 27px;
+        height: 23px;
+    }
+}
+
+/*Level 5 */
+@media screen and (min-width: 1150px) {
+    body{
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    h1{
+        width: 65%;
+    }
+    #picx{
+        width: 35%;
+    }
+    .topB{
+        width: 65%;
+    }
+    .BPlan{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .topB ul li{
+        width: 100px;
+    }
+    .socialMedia ul li{
+        width: 120px;
+    }
+    .topB ul li a,
+    .socialMedia ul li a{
+        font-size: 22px;
+    }
+}

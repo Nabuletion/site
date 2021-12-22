@@ -1,0 +1,1 @@
+<?php /**PATH D:\xampp\htdocs\fisrt\resources\views/Main.blade.php ENDPATH**/ ?>
