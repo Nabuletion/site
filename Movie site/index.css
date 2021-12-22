@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(172, 182, 182);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Algerian;
+    color: chartreuse;
+}
+
+#sus {
+    display: none;
+}
+
+.fixedPart {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+#tte {
+    margin-top: 190px;
+    width: 100%;
+}
+
+.topBar {
+    text-align: center;
+    color: #fff;
+}
+
+.topBar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.topBar ul li {
+    width: 150px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.topBar ul li a {
+    text-decoration: none;
+    color: rgb(234, 243, 235);
+}
+
+.Active1,
+.topBar ul li a:hover {
+    background: rgb(0, 255, 0);
+    border-radius: 2px;
+}
+
+#disclaimer {
+    display: none;
+}
+
+#imgCon,
+#imgMV {
+    width: 190px;
+    height: 290px;
+}
+
+.cardL {
+    border-style: groove;
+    border: 3px;
+}
+
+.tUp {
+    color: red;
+}
+
+.latestMovies,
+.latestSeries {
+    margin: 5 auto;
+    margin-left: 5px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    row-gap: 6px;
+    border-style: groove;
+}
+
+.cardsLT {
+    margin: auto;
+    margin-left: 5px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4px;
+    row-gap: 6px;
+    border-style: dashed;
+}
+
+#socialLinks {
+    background-color: burlywood;
+    background-size: 100%;
+}
+
+#Subs {
+    text-align: center;
+}
+
+.socialMedia {
+    border: #fff;
+    text-align: center;
+    color: #fff;
+}
+
+.socialMedia ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.socialMedia ul li {
+    Width: 180px;
+    margin: 15px;
+    padding: 7px;
+}
+
+.socialMedia ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active2,
+socialMedia ul li a:hover {
+    background: rgb(0, 50, 90);
+    border-radius: 10px;
+}
+
+.cRights {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+    position: static;
+    width: auto;
+}
+
+
+/*Movies arrangement*/
+
+.MSarrange {
+    margin: auto;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    gap: 2px;
+    row-gap: 7px;
+}
+
+.sPics {
+    margin: auto;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    gap: 2px;
+    row-gap: 7px;
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 45px;
+    }
+    #sus {
+        display: block;
+        font-size: 20px;
+    }
+    #imgCon,
+    #imgMV {
+        width: 150px;
+        height: 250px;
+    }
+    /*
+    #imgMV {
+        width: 100px;
+        height: 150px;
+    }*/
+    .latestMovies,
+    .latestSeries {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+        row-gap: 8px;
+    }
+    .cardsLT {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        row-gap: 8px;
+    }
+    .MSarrange {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+        gap: 5px;
+        row-gap: 10px;
+    }
+    .sPics {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(50, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+    #disclaimer {
+        display: inline;
+        background-color: white;
+        background-size: 40px;
+        color: red;
+    }
+    #imgCon,
+    #picsConf,
+    #imgMV {
+        width: 120px;
+        height: 200px;
+    }
+    .latestMovies,
+    .latestSeries {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 5px;
+        row-gap: 5px;
+    }
+    .cardsLT {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+        row-gap: 5px;
+    }
+    .MSarrange {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .seriesLs {
+        float: left;
+        width: 15%;
+        height: fit-content;
+    }
+    .sPics {
+        float: right;
+        width: 85%;
+        height: fit-content;
+        background-color: red;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        justify-content: space-evenly;
+    }
+    .ssPpics img {
+        width: 100px;
+        height: 80px;
+        /*display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        justify-content: space-between;*/
+    }
+}
